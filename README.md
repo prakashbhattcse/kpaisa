@@ -37,13 +37,14 @@ This is a simple Task Management App built using React, which allows users to re
 ├── public
 │   └── index.html           # Main HTML file
 ├── src
-│   ├── Assets
-│   │   └── login1.jpg        # Login image used in the Auth component
 │   ├── Components
-│   │   └── Auth.js           # Handles login and registration logic
+│   │   ├── AddTask.jsx       # Form for adding new tasks
+│   │   ├── Auth.jsx          # Handles user login and registration
+│   │   ├── TaskItem.jsx      # Individual task component for rendering task details
+│   │   └── TaskList.jsx      # List of all tasks
 │   ├── Context
-│   │   ├── TaskContext.js    # Context provider for task management
-│   │   └── UserContext.js    # Context provider for user authentication
+│   │   ├── TaskContext.jsx   # Context provider for task management
+│   │   └── userContext.jsx   # Context provider for user authentication
 │   ├── Services
 │   │   └── mockApi.js        # Mock API simulating backend interactions for users and tasks
 │   ├── Utils
