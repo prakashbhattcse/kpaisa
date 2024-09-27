@@ -1,7 +1,3 @@
-Here's a `README.md` file for your project that includes instructions on how to run it, explains the structure of the code, and provides additional information.
-
----
-
 # Task Management App
 
 This is a simple Task Management App built using React, which allows users to register, log in, and manage their tasks. The app includes task creation, task completion, and task deletion functionalities, with persistent storage in the browser's `localStorage`. Users' sessions are also stored locally to simulate authentication.
@@ -56,11 +52,14 @@ This is a simple Task Management App built using React, which allows users to re
 ```
 
 ### Key Files
+- **`AddTask.jsx`**: A form to input new tasks.
+- **`Auth.jsx`**: Handles user authentication (login and registration) and session management.
+- **`TaskItem.jsx`**: Displays individual task details, including edit and delete options.
+- **`TaskList.jsx`**: Displays a list of all tasks.
 - **`mockApi.js`**: Simulates backend API for user registration, login, and task management.
 - **`storage.js`**: Provides helper functions to save and retrieve user session data from `localStorage`.
-- **`TaskContext.js`**: Manages global task data using React's Context API.
-- **`Auth.js`**: Handles user authentication (login and registration) and session management.
-- **`App.js`**: Main component that routes between different pages (Login, Task List, etc.).
+- **`TaskContext.jsx`**: Manages global task data using React's Context API.
+- **`userContext.jsx`**: Manages global user data using React's Context API.
 
 ---
 
@@ -79,7 +78,6 @@ This is a simple Task Management App built using React, which allows users to re
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/task-management-app.git
-cd task-management-app
 ```
 
 ### 2. Install Dependencies
@@ -93,7 +91,7 @@ To start the development server, use the command:
 ```bash
 npm run dev
 ```
-This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 
 ---
 
@@ -115,4 +113,3 @@ This will run the app in development mode. Open [http://localhost:3000](http://l
 - **Toast Notifications**: Feedback is provided via `react-toastify` for success or error messages during authentication and task operations.
 
 ---
-
