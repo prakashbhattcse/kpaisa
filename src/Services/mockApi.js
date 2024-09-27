@@ -31,7 +31,7 @@ export const addTask = async (task) => {
 
   // Update localStorage for tasks and taskId
   localStorage.setItem("tasks", JSON.stringify(tasks));
-  localStorage.setItem("taskId", taskId.toString()); // Persist taskId
+  localStorage.setItem("taskId", taskId.toString());
 
   return newTask;
 };
