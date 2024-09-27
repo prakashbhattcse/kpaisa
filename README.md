@@ -90,7 +90,7 @@ npm install
 ### 3. Run the Project
 To start the development server, use the command:
 ```bash
-npm start
+npm run dev
 ```
 This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
